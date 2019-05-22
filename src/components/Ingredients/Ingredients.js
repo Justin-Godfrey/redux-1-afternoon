@@ -27,11 +27,11 @@ class Ingredients extends Component {
       input: val
     });
   }
-  
+
   addIngredient() {
     store.dispatch({
       type: ADD_INGREDIENT,
-      payload: this.state.inut
+      payload: this.state.input
     })
     this.setState({
       input: ""

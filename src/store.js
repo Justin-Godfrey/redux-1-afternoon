@@ -31,6 +31,7 @@ function reducer(state = initialState, action) {
         return {...state, category: payload};
         case ADD_INGREDIENT:
         const newIngredients = [...state.ingredients, payload]
+        console.log(payload)
         return {...state, ingredients: newIngredients}
         case ADD_INSTRUCTION:
         const newInstructions = [...state.instructions, payload]
@@ -53,8 +54,8 @@ function reducer(state = initialState, action) {
             instructions
         };
 
-        const newRecipes = [...state.recipes, recipe]
-        return {...state, recipes: newRecipes}
+        const newRecipes = [...state.recipe, recipe]
+        return {...state, recipe: newRecipes}
         default:
         return state;
     }

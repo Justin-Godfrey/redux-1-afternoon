@@ -9,7 +9,7 @@ class Home extends Component {
     super(props);
     const reduxState = store.getState()
     this.state = {
-      recipes: reduxState.recipes
+      recipes: reduxState.recipe
     };
   }
 
